@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favicon" rel="icon" href="assets/LOGO.png">
+    <title>-SABA-</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="#inicio">
+
+            <img src="assets/LOGO.png" alt="logo" class="logo">
+
+        </a>
+
+        <button id="menu_hamburguer">
+
+            <img src="assets/bars-solid.svg" id="open">
+
+            <img src="assets/x-solid.svg" id="close">
+
+        </button>
+
+        <nav>
+
+            <ul id="nav-menu">
+
+                <li class="nav-item active">
+
+                    <a href="#" class="menu_linck">
+                        INICIO
+                    </a>
+
+                </li>
+                <li class="nav-item">
+
+                    <a href="#productos" class="menu_linck">
+                        PRODUCTOS
+                    </a>
+
+                </li>
+                <li class="nav-item">
+
+                    <a href="#" class="menu_linck">
+                        CONTACTOS
+                    </a>
+
+                </li>
+
+                <li class="page-nav">
+
+                    <img src="assets/carrito-de-compras.png" id="checkout" class="button-checkout" onclick="pay()">
+                    
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="zona1">
+
+            <div class="contenedor">
+
+                <div class="slider-contenedor">
+
+                    <section class="contenido-slider">
+
+                        <img src="assets/Portada1.jpg" alt="">
+
+                    </section>
+
+                    <section class="contenido-slider">
+
+                        <img src="assets/Portada2.jpeg" alt="">
+
+                    </section>
+
+                    <section class="contenido-slider">
+
+                        <img src="assets/Portada3.png" alt="">
+
+                    </section>
+
+                    <section class="contenido-slider">
+
+                        <img src="assets/Portada1.jpg" alt="">
+
+                    </section>
+
+                </div>
+
+                <img src="" alt="">
+
+
+            </div>
+
+        </section>
+
+
+        <section id="productos" class="zona2">
+
+            <h2>NUESTROS FAVORITOS</h2>
+
+            <div class="page-content">
+
+                <div class="product-container">
+
+
+                    <img src="assets/img7.jpeg" onclick="add('img7', 1500)" />
+                    <h5>Remera clasica</h5>
+                    <h5>$1500</h5>
+                    <!--<button class="button-add" onclick="add('img7', 50)">Agregar</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+                    <img src="assets/img8.jpeg" />
+                    <h5>Pollera engomada</h5>
+                    <h5>$3000</h5>
+                    <!--<button class="button-add" onclick="add('img8', 3000)">COMPRAR</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+                    <img src="assets/img9.jpeg" class="button-add" onclick="add('img9', 1800)" />
+                    <h5>Remera fight</h5>
+                    <h5>$1800</h5>
+                    <!--<button class="button-add" onclick="add('img9', 1800)">COMPRAR</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+
+                    <img src="assets/img10.jpeg" class="button-add" onclick="add('img10', 8000)" />
+                    <h5>Conjunto light blue</h5>
+                    <h5>$8000</h5>
+                    <!--<button class="button-add" onclick="add('img10', 8000)">COMPRAR</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+
+                    <img src="assets/img11.jpeg" class="button-add" onclick="add('img11', 8200)" />
+                    <h5>Conjusto rose</h5>
+                    <h5>$8200</h5>
+                    <!--<button class="button-add" onclick="add('img11', 8200)">COMPRAR</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+
+                    <img src="assets/img12.jpeg" class="button-add" onclick="add('img12', 7800)" />
+                    <h5>Jean MOM</h5>
+                    <h5>$7800</h5>
+                    <!--<button class="button-add" onclick="add('img12', 7800)">COMPRAR</button>-->
+
+                </div>
+
+                <div class="product-container">
+
+
+                    <img src="assets/img13.jpeg" class="button-add" onclick="add('img13', 6500)" />
+                    <h5>Camisa</h5>
+                    <h5>$6500</h5>
+                    <!--<button class="button-add" onclick="add('img13', 6500)">COMPRAR</button>-->
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-paguina">
+
+        <div class="grupo1">
+            <div class="box">
+
+                <figure>
+                    <a href="#inicio">
+
+                        <img src="assets/LOGO.png" alt="logo saba">
+
+                    </a>
+                </figure>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aspernatur repudiandae voluptas?
+                    Laboriosam, ab. Aliquid consequatur, veritatis quis dhk</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in consectetur enim neque consequatur,
+                    error deserunt, aliquam facilis maiores voluptatem</p>
+
+            </div>
+            <div class="box">
+
+                <h2>Seguinos</h2>
+
+                <div class="red-social">
+
+                    <a href="#">
+
+                        <img class="iconos-redes" src="assets/facebook (2).png" alt="facebook">
+
+                    </a>
+
+                    <a href="#">
+
+                        <img class="iconos-redes" src="assets/instagram (2).png" alt="instagram">
+
+                    </a>
+
+                    <a href="#">
+
+                        <img class="iconos-redes" src="assets/email (1).png" alt="email">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="grupo2">
+            <small>&copy;2022 <b>Ezequiel D. Castro</b>Todos los Derechos Reservados.</small>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

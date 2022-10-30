@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+#favicon {
+
+    border-radius: 10%;
+    height: 16px;
+    width: 16px;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
+}
+footer{
+    background-color:  #fffbf4;
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+
+    font-size: 36px;
+    text-align: center;
+    
+
+}
+
+h2 {
+
+    font-size: 28px;
+    
+}
+
+p {
+
+    margin: 16px 0;
+
+}
+
+header {
+
+    position: fixed;
+    /**/
+    top: 0;
+    /**/
+    left: 0;
+    /**/
+    width: 100%;
+    /**/
+    display: flex;
+    /**/
+    justify-content: space-between;
+    /**/
+    align-items: center;
+    /**/
+    transition: 0.7s;
+    padding: 30px 20px;
+    /**/
+    z-index: 10;
+    height: 110px;
+
+}
+
+header.abajo {
+
+    background-color: #fff;
+    padding: 15px 20px;
+    /*esto tiene que ir cuando baja*/
+    width: 100%;
+    background-color: #fffbf4;
+    box-shadow: 0 5px 10px --5px #6a6868;
+
+}
+
+header .logo {
+
+    width: 180px;
+
+}
+
+nav {
+    display: none;
+}
+
+#nav-menu {
+
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.page-nav {
+    width: 40px;
+    margin: 15px;
+}
+
+
+.button-checkout {
+
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 40px;
+
+}
+
+.button-checkout:hover {
+
+    background-color: peru;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+header ul li a {
+
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    padding: 16px;
+    display: inline-block;
+
+}
+/*........ MAIN .........*/
+section {
+    /*.......USAMOS FLEXBOX....*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /*esta propiedad permite distribuir los contenidos (imagen y texto)*/
+   
+    min-height: 100vh;
+    /*Lugar para el header*/
+    padding-top: 90px;
+}
+
+.zona1 {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #000000;
+}
+
+.iconos:hover,
+.nav-item:hover {
+
+    background-color: peru;
+    transition: background-color 0.3s;
+
+}
+
+/*....... MENU DESPLEGABLE........*/
+
+#menu_hamburguer {
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+
+}
+
+img#close {
+    display: none;
+
+}
+
+body.mobile-menu-active img#close {
+
+    display: block;
+}
+
+body.mobile-menu-active img#open {
+
+    display: none;
+}
+
+body.mobile-menu-active header {
+
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.3s;
+}
+
+body.mobile-menu-active nav {
+
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.mobile-menu-active ul#nav-menu {
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+body.mobile-menu-active {
+
+    overflow: hidden;
+
+}
+
+/*.......NUESTROS FAVORITOS.......*/
+
+.contenedor {
+
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slider-contenedor {
+    width: 100%;
+   display: flex;
+}
+
+.contenido-slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    /*capasidad de encigerse*/
+
+
+}
+
+.contenido-slider>img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-widh: 600px) {
+    .contenido-slider {
+        flex-direction: column-reverse;
+    }
+}
+
+section.zona2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
+    justify-content: center;
+   
+}
+
+button {
+
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+
+}
+
+.page-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*border: 1px solid rgb(219, 168, 115);*/
+
+
+}
+
+.product-container {
+
+    margin: 15px;
+    position: relative;
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+    /* background-color: rgb(255, 252, 248);*/
+    padding: 2px 16px;
+
+
+}
+
+.product-container:hover {
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.product-container img {
+
+    width: 300px;
+
+}
+
+
+.product-container h2 {
+
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+
+.button-add:hover {
+
+    background-color: peru;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/*-------pie de paguina-----------*/
+
+.pie-paguina {
+    
+    width: 100%;
+    background-color: #fffbf4;
+
+}
+
+.pie-paguina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-paguina .grupo1  .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-paguina .grupo1  .box figure img {
+    width: 250px;
+}
+
+/*.........SEGUINOS..............*/
+img.iconos-redes{
+
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    line-height: 45px;
+    background-color: #fffbf4;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+img.iconos-redes:hover {
+
+    background-color: peru;
+
+}
+
+.pie-paguina.grupo1.red-social a {
+
+    display: inline-block;
+    text-decoration: none;
+   
+}
+.pie-paguina .grupo2{
+    background-color: rgb(174, 112, 50);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+
