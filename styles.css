@@ -120,7 +120,7 @@ nav {
 
 .page-nav {
     width: 40px;
-    margin: 15px;
+    margin-left: 25px;
 }
 
 
@@ -156,6 +156,8 @@ header ul li a {
     display: inline-block;
 
 }
+
+
 /*........ MAIN .........*/
 section {
     /*.......USAMOS FLEXBOX....*/
@@ -203,6 +205,7 @@ header.abajo ul li a {
     font-size: 26px;
     width: 40px;
     height: 40px;
+    width: 20px;
 
 }
 
@@ -214,6 +217,7 @@ img#close {
 body.mobile-menu-active img#close {
 
     display: block;
+
 }
 
 body.mobile-menu-active img#open {

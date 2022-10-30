@@ -54,7 +54,7 @@ function slides() {
     }
 }
 
-//--------------------------------------------------------
+//----------------Carrito----------------------------------------
 
 let products = [];
 let total = 0;
@@ -67,6 +67,6 @@ function add(product, price) {
 }
 function pay() {
     //console.log(product, price);
-    window.alert(products.join(",\n"));
+    window.alert(products.join (",\n") + (",\n") + "Total de su compra" + "$" + total);
 
 }
